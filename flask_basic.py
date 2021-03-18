@@ -8,7 +8,7 @@ def index():
         some_json = request.get_json()
         return jsonify({'you sent': some_json}), 201
     else:
-        return jsonify({'about': "Hello Wordl"})
+        return jsonify({'about': "Hello World"})
 @app.route('/multi/<int:num>', methods=['GET']
 )
 def get_multiply10(num):
